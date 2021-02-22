@@ -1,0 +1,107 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+  z-index: 1000;
+}
+
+.modal_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 55px 50px 66px 46px;
+  border-radius: 16px;
+  background-color: #fff;
+  width: 384px;
+  height: 536px;
+  transform: scale(.5);
+  transition: .4s all;
+}
+
+.modal_content.active {
+  transform: scale(1);
+}
+
+.modal_title {
+  font-size: 16px;
+  text-transform: uppercase;
+  opacity: .5;
+  margin-bottom: 8px;
+}
+
+.modal_name {
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+
+.modal_price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.modal_dollar {
+  font-size: 30px;
+  margin-right: 4px;
+}
+
+.modal_price {
+  font-size: 60px;
+}
+
+.input_name {
+  width: 288px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.input_number {
+  width: 288px;
+  height: 56px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  border-radius: 16px;
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.modal_btn {
+  margin-top: 32px;
+  width: 288px;
+  height: 56px;
+  background: #4BCFA0;
+  border-radius: 16px;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 16px 107px;
+}
+
+.error_container {
+  display: flex;
+  align-items: start;
+}
+
+.error {
+  margin-top: 2px;
+  font-size: 12px;
+  color: #E43F3F;
+}

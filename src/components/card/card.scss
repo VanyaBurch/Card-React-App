@@ -1,0 +1,67 @@
+.card {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2vw;
+  padding: 105px 152px 115px;
+}
+
+.container_card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 32px;
+  width: 352px;
+  height: 256px;
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+
+.wrapper_title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.title_name {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  opacity: .5;
+  margin-bottom: 8px;
+}
+
+.title_item {
+  font-size: 40px;
+  color: #000;
+  letter-spacing: -0.02em;
+}
+
+.wrapper_buy {
+  //position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.buy_dollar {
+  //position: absolute;
+  left: -4px;
+  top: 13px;
+  font-size: 30px;
+  margin-right: 4px;
+}
+
+.buy_price {
+  //position: absolute;
+  left: 21px;
+  top: 0;
+  font-size: 60px;
+  margin-right: 40px;
+}
+
+.buy_btn {
+  //position: static;
+  left: 16px;
+  top: 16px;
+}
